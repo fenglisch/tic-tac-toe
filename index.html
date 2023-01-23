@@ -13,8 +13,29 @@
       <div class="modal-box">
         <span class="close-modal">&times;</span>
         <h3 class="result"></h3>
+        <button class="play-again-modal">Play again</button>
       </div>
     </div>
-    <div class="container"></div>
+    <div class="start-screen">
+      <form>
+        <h1>Are you ready for some Tic-Tac-Toe?</h1>
+        <legend>Enter your names</legend>
+        <div class="player-names-container">
+          <div class="player-name">
+            <label for="player1-name">Player 1</label>
+            <input type="text" id="player1-name" />
+          </div>
+          <div class="player-name">
+            <label for="player2-name">Player 2</label>
+            <input type="text" id="player2-name" />
+          </div>
+        </div>
+        <button class="start-game">Start</button>
+      </form>
+    </div>
+    <div class="grid-container hidden">
+      <div class="grid"></div>
+      <button class="play-again-container hidden">Play again</button>
+    </div>
   </body>
 </html>

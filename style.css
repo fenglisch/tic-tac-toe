@@ -6,10 +6,42 @@ body {
   margin: 0;
 }
 
-.container {
+.start-screen {
+  width: calc(100%-60px);
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.player-names-container {
+  display: flex;
+  justify-content: stretch;
+  gap: 20px;
+}
+
+.player-name {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.grid-container {
   width: 100%;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -48,6 +80,7 @@ body {
   margin: auto;
   transform: translateY(30vh);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -59,4 +92,10 @@ body {
   right: 10px;
   font-size: 2em;
   cursor: pointer;
+}
+
+.play-again-container {
+  margin-top: 30px;
+  position: absolute;
+  bottom: 20vh;
 }
